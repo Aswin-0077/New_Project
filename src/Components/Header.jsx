@@ -1,4 +1,4 @@
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { faCaretDown , faMagnifyingGlass,faBell,faGear,faHouseMedical} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
@@ -11,11 +11,9 @@ function Header() {
   return (
     <>
       <div>
-        <Navbar expand="lg" className="bg-info m-3">
+        <Navbar expand="lg" className="bg-info m-3 ">
           <Container fluid>
-            <Navbar.Brand href="#" className="text-light">
-              Aswin Hsptl
-            </Navbar.Brand>
+            <Navbar.Brand href="/" className="text-light"><FontAwesomeIcon icon={faHouseMedical} style={{color: "#ffffff",}} />  Aswin Hsptl</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav
@@ -55,9 +53,9 @@ function Header() {
               </Form>
               <Button variant="outline-success" className="bg-success text-light ms-3">New Sale</Button>
               <Button variant="outline-success" className="bg-success text-light ms-3 me-3">Add Patient</Button>  
-              <button className="me-3">a</button>
-              <button className="me-3">b</button>
-              <button className="me-3">c</button>
+              <button className="me-3 bg-secondary border-0 "><FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#ffffff",}} /></button>
+              <button className="me-3 bg-secondary border-0"><FontAwesomeIcon icon={faBell} style={{color: "#ffffff",}} /></button>
+              <button className="me-3 bg-secondary border-0"><FontAwesomeIcon icon={faGear} style={{color: "#ffffff",}} /></button>
             </Navbar.Collapse>
           </Container>
         </Navbar>
